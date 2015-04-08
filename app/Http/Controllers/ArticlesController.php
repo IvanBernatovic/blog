@@ -5,10 +5,11 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class ArticleController extends Controller {
+class ArticlesController extends Controller {
 
 	public function showArticles(){
-		return view('articles');
+		return view('articles/articles')
+			->with(['title' => 'Home']);
 	}
 
 }

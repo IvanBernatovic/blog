@@ -16,11 +16,11 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Blog</a>
+				<a class="navbar-brand" href="{{ route('articles') }}">Blog</a>
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Articles</a></li>
+					<li class="active"><a href="{{ route('articles') }}">Articles</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 				<li><a href="@if(Auth::check()){{ route('logout') }}@else{{route('getLogin')}}@endif">
