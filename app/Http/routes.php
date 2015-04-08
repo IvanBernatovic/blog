@@ -11,4 +11,35 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::group(['middleware' => 'auth'], function(){
+    Route::get('/logout', [
+	'as' => 'logout',
+	'uses' => 'UserController@logout'
+    ]);
+});
+
+Route::group(['middleware' => 'guest'], function(){
+    Route::get('/login', [
+	'as' => 'getLogin',
+	'uses' => 'UserController@getLogin'
+    ]);
+
+    Route::post('/login', [
+	'as' => 'postLogin',
+	'uses' => 'UserController@postLogin'
+    ]);
+    
+    Route::get('/register', [
+        'as' => 'getRegister',
+        'uses' => 'UserController@getRegister'
+    ]);
+
+    Route::post('/register', [
+        'as' => 'postRegister',
+        'uses' => 'UserController@postRegister'
+    ]);
+});
+
+Route::get('/', function(){
+	return 'Naslovna stranica.';
+});
