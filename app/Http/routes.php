@@ -41,5 +41,10 @@ Route::group(['middleware' => 'guest'], function(){
 });
 
 Route::get('/', function(){
-	return 'Naslovna stranica.';
+	return redirect('articles');
 });
+
+Route::get('/articles', [
+	'as' => 'articles', 
+	'uses' => 'ArticlesController@showArticles'
+]);
