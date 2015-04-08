@@ -23,7 +23,8 @@
 					<li class="active"><a href="#">Articles</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-				<li><a href="{{ route('logout') }}">Logout</a></li>
+				<li><a href="@if(Auth::check()){{ route('logout') }}@else{{route('getLogin')}}@endif">
+				@if(Auth::check()) Logout @else Login @endif</a></li>
 				</ul>
 			</div>
 		</div>
