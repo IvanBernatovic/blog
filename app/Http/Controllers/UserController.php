@@ -3,7 +3,10 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use Request;
+use Validator;
+use App\User;
+use Hash;
 
 class UserController extends Controller {
 
@@ -12,15 +15,35 @@ class UserController extends Controller {
     }
 
     public function postLogin(){
-        return 'postLogin';
+    	return 'postLogin';
     }
 
     public function getRegister(){
-    	return view('auth/register');
+    	return view('auth/register')->with('title', 'Register');
     }
 
     public function postRegister(){
-    	return 'postRegister';
+    	$input = Request::all();
+
+        $validator = Validator::make($input, 
+            [
+            	'username' => 'required|between:2,25',
+            	'email' => 'required|max:50|email|unique:users',
+                'password' => 'required|min:6|alpha_dash',
+            ]
+        );
+
+        if($validator->fails()){
+        	return redirect()->route('getRegister');
+        }
+
+    	$user = new User;
+    	$user->username = $input['username'];
+    	$user->email = $input['email'];
+    	$user->password = Hash::make($input['password'], ['length' => 60]);
+    	$user->save();
+
+    	return redirect()->route('articles');
     }
 
     public function logout(){
