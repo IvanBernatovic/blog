@@ -7,6 +7,7 @@ use Request;
 use Validator;
 use App\User;
 use Hash;
+use Auth;
 
 class UserController extends Controller {
 
@@ -15,7 +16,24 @@ class UserController extends Controller {
     }
 
     public function postLogin(){
-    	return 'postLogin';
+    	$input = Request::all();
+
+	 	$validator = Validator::make($input, 
+	        [
+	        	'username' => 'required|between:2,25',
+	            'password' => 'required|min:6|alpha_dash',
+	        ]
+    	);
+
+	 	if($validator->fails()){
+        	return redirect()->route('getLogin')->withInput();
+        }
+
+    	if(Auth::attempt(['username' => $input['username'], 'password' => $input['password']])){
+    		return redirect()->route('articles');
+    	}
+
+    	return redirect()->route('getLogin')->withInput();
     }
 
     public function getRegister(){
@@ -34,7 +52,7 @@ class UserController extends Controller {
         );
 
         if($validator->fails()){
-        	return redirect()->route('getRegister');
+        	return redirect()->route('getRegister')->withInput();
         }
 
     	$user = new User;
