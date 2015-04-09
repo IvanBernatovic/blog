@@ -46,5 +46,10 @@ Route::get('/', function(){
 
 Route::get('/articles', [
 	'as' => 'articles', 
-	'uses' => 'ArticlesController@showArticles'
+	'uses' => 'ArticlesController@showAll'
+]);
+
+Route::get('/articles/{id}', [
+	'as' => 'showArticle', 
+	'uses' => 'ArticlesController@show'
 ]);

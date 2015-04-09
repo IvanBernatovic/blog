@@ -7,7 +7,13 @@ use Illuminate\Http\Request;
 use App\Article;
 class ArticlesController extends Controller {
 
-	public function showArticles(){
+	public function show($id){
+		$article = Article::findOrFail($id);
+
+		return view('articles/article')->with(['article' => $article]);
+	}
+
+	public function showAll(){
 		$articles = Article::latest()->get();
 
 		return view('articles/articles')
