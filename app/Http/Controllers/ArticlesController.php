@@ -18,7 +18,7 @@ class ArticlesController extends Controller {
 	}
 
 	public function showAll(){
-		$articles = Article::latest()->get();
+		$articles = Article::latest()->paginate(2);
 
 		return view('articles/articles')
 			->with(['title' => 'Home',

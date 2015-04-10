@@ -5,4 +5,5 @@
 	<h1><a href="{{ route('showArticle', $article->id) }}">{{ $article->title }}</a></h1>
 	<p>{{ $article->body }}</p>
 @endforeach
+{!! $articles->render() !!}
 @stop
