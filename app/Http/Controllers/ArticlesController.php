@@ -22,4 +22,11 @@ class ArticlesController extends Controller {
 					]);
 	}
 
+	public function getCreate(){
+		return 'getCreate';
+	}
+
+	public function postCreate(){
+		return 'postCreate';
+	}
 }

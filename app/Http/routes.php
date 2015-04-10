@@ -13,20 +13,30 @@
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/logout', [
-	'as' => 'logout',
-	'uses' => 'UserController@logout'
+		'as' => 'logout',
+		'uses' => 'UserController@logout'
     ]);
+
+    Route::get('/articles/create', [
+    	'as' => 'getCreate',
+    	'uses' => 'ArticlesController@getCreate'
+	]);
+
+	 Route::post('/articles/create', [
+    	'as' => 'postCreate',
+    	'uses' => 'ArticlesController@postCreate'
+	]);
 });
 
 Route::group(['middleware' => 'guest'], function(){
     Route::get('/login', [
-	'as' => 'getLogin',
-	'uses' => 'UserController@getLogin'
+		'as' => 'getLogin',
+		'uses' => 'UserController@getLogin'
     ]);
 
     Route::post('/login', [
-	'as' => 'postLogin',
-	'uses' => 'UserController@postLogin'
+		'as' => 'postLogin',
+		'uses' => 'UserController@postLogin'
     ]);
     
     Route::get('/register', [
