@@ -53,11 +53,11 @@ class ArticlesController extends Controller {
 		return redirect()->route('showArticle', $article->id);
 	}
 
-	public function getEdit(){
+	public function getEdit($id){
 		return 'getEdit';
 	}
 
-	public function postEdit(){
+	public function postEdit($id){
 		return 'postEdit';
 	}
 }
