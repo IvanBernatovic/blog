@@ -24,7 +24,7 @@ class ArticlesController extends Controller {
 	}
 
 	public function getCreate(){
-		return 'getCreate';
+		return view('articles/create');
 	}
 
 	public function postCreate(){
