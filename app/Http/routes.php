@@ -27,13 +27,13 @@ Route::group(['middleware' => 'auth'], function(){
     	'uses' => 'ArticlesController@postCreate'
 	]);
 
-	Route::get('/article/{id}/edit', [
-		'as' => 'getEdit'
+	Route::get('/articles/{id}/edit', [
+		'as' => 'getEdit',
 		'uses' => 'ArticlesController@getEdit'
 	]);
 
-	Route::post('/article/{id}/edit', [
-		'as' => 'postEdit'
+	Route::post('/articles/{id}/edit', [
+		'as' => 'postEdit',
 		'uses' => 'ArticlesController@postEdit'
 	]);
 });
