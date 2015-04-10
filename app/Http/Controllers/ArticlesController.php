@@ -1,10 +1,13 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Requests;
+use Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use Request;
 use App\Article;
+use Validator;
+use App\User;
+use Auth;
 
 class ArticlesController extends Controller {
 
@@ -28,6 +31,25 @@ class ArticlesController extends Controller {
 	}
 
 	public function postCreate(){
-		return 'postCreate';
+		$input = Request::all();
+
+	 	$validator = Validator::make($input, 
+	        [
+	        	'title' => 'required|between:2,40',
+	            'body' => 'required|min:6',
+	        ]
+    	);
+
+	 	if($validator->fails()){
+	 		return redirect()->route('getCreate')->withInput();
+	 	}
+
+		$article = new Article;
+		$article->title = $input['title'];
+		$article->body = $input['body'];
+		$article->user_id = Auth::user()->id;
+		$article->save();
+
+		return redirect()->route('showArticle', $article->id);
 	}
 }
