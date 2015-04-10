@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Request;
 use Validator;
 use App\User;
+use App\Article;
 use Hash;
 use Auth;
 
@@ -68,5 +69,11 @@ class UserController extends Controller {
     	Auth::logout();
 
     	return redirect()->back();
+    }
+
+    public function showUser($username){
+    	$user = User::where('username', '=', $username)->firstOrFail();
+
+    	return view('user')->with('user', $user);
     }
 }
