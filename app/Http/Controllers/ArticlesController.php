@@ -54,10 +54,31 @@ class ArticlesController extends Controller {
 	}
 
 	public function getEdit($id){
-		return 'getEdit';
+		$article = Article::findOrFail($id);
+
+		return view('articles/edit')->with('article', $article);
 	}
 
 	public function postEdit($id){
-		return 'postEdit';
+		$input = Request::all();
+
+	 	$validator = Validator::make($input, 
+	        [
+	        	'title' => 'required|between:2,40',
+	            'body' => 'required|min:6',
+	        ]
+    	);
+
+	 	if($validator->fails()){
+	 		return redirect()->route('getEdit')->withInput();
+	 	}
+
+		$article = Article::findOrFail($id);
+		$article->title = $input['title'];
+		$article->body = $input['body'];
+		
+		$article->save();
+
+		return redirect()->route('showArticle', $article->id);
 	}
 }
