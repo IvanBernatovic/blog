@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Article;
+
 class ArticlesController extends Controller {
 
 	public function show($id){
