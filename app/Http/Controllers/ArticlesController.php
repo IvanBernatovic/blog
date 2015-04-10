@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use Requests;
+use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Request;
@@ -51,5 +51,13 @@ class ArticlesController extends Controller {
 		$article->save();
 
 		return redirect()->route('showArticle', $article->id);
+	}
+
+	public function getEdit(){
+		return 'getEdit';
+	}
+
+	public function postEdit(){
+		return 'postEdit';
 	}
 }
