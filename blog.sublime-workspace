@@ -1,0 +1,665 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lo",
+				"lorem	Lorem ipsum"
+			],
+			[
+				"likeC",
+				"likeCountSpanID"
+			],
+			[
+				"liked",
+				"likedPostID〔variable〕"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"comment",
+				"commentTextareaID"
+			],
+			[
+				"te",
+				"textAreaID"
+			],
+			[
+				"ser",
+				"serializedForm〔argument〕"
+			],
+			[
+				"key",
+				"keypress〔function〕"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"li",
+				"lightgrey"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"inline-b",
+				"inline-table"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"row",
+				"rows	Attr"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"chec",
+				"$check1〔variable〕"
+			],
+			[
+				"che",
+				"$check1〔variable〕"
+			],
+			[
+				"c",
+				"col"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"java",
+				"javascript:void"
+			],
+			[
+				"style",
+				"stylesheet"
+			],
+			[
+				"root",
+				"root"
+			],
+			[
+				"color",
+				"colorClass"
+			],
+			[
+				"colo",
+				"colorClass"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"border-r",
+				"border-right-style"
+			],
+			[
+				"border-le",
+				"border-left-style"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"backgrou",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n\n\nPackage Control:\n---------------\n\n  Version 3.0 Release Notes\n  \n  \n  **** Windows Sublime Text 3 Users ****\n  \n  Due to a bug in Package Control 2.0, Windows ST3 users will need to open the\n  Sublime Text console (ctrl+`) and execute the following Python to properly\n  upgrade. All other users may ignore this part of the message.\n  \n  Make sure NOT to copy the leading two spaces, or an \"unexpected indent\" error\n  will occur.\n  \n  import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')\n  \n  ********\n  \n  \n  Package Control 3.0 adds a bunch of polish, improving the Sublime Text\n  experience for users and package developers:\n  \n   - improved upgrades of themes, color schemes and syntaxes\n   - dependency support\n   - SSL for Linux\n   - new secondary Windows HTTP backend\n   - patches for Python in Sublime Text 2 on Windows\n   - commands to easily remove channels and repositories\n   - an events API for packages\n   - improved documentation\n  \n  \n  As of July 2014, I now work for myself. This has allowed me to spend more time\n  working on open source software, including Package Control. If you appreciate\n  the work I've done, please consider a small donation. If even 5% of regular\n  users donated the price of a coffee or beer, that would cover quite a bit of\n  my development time! See https://packagecontrol.io/about for options.\n  \n  \n  Some recent Package Control stats:\n  \n   - every weekday over 1M JSON requests hit the channel server\n   - in December, the channel server will transmit 4TB+ of compressed JSON\n   - users have installed, upgraded or removed 85M+ packages since late 2011\n  \n  \n  Read more about the release at:\n  \n  https://packagecontrol.io/news#2014-12-23-Package_Control_30_Released\n  \n",
+			"settings":
+			{
+				"buffer_size": 4837,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"scratch": true
+			}
+		},
+		{
+			"file": "resources/views/articles/articles.blade.php",
+			"settings":
+			{
+				"buffer_size": 233,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Jade Build/Jade.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 178.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: lis",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: set ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: if … else"
+			],
+			[
+				"Snippet: 	",
+				"Snippet: html"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 247.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/XAMPP/htdocs/blog",
+		"/C/XAMPP/htdocs/blog/app",
+		"/C/XAMPP/htdocs/blog/app/Http",
+		"/C/XAMPP/htdocs/blog/app/Http/Controllers",
+		"/C/XAMPP/htdocs/blog/database",
+		"/C/XAMPP/htdocs/blog/database/migrations",
+		"/C/XAMPP/htdocs/blog/public",
+		"/C/XAMPP/htdocs/blog/public/css",
+		"/C/XAMPP/htdocs/blog/resources",
+		"/C/XAMPP/htdocs/blog/resources/views",
+		"/C/XAMPP/htdocs/blog/resources/views/articles",
+		"/C/XAMPP/htdocs/blog/resources/views/auth"
+	],
+	"file_history":
+	[
+		"/C/Users/Ivan/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Ivan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/XAMPP/htdocs/blog/resources/views/master.blade.php",
+		"/C/XAMPP/htdocs/blog/public/css/style.css",
+		"/C/XAMPP/htdocs/blog/resources/views/articles/articles.blade.php",
+		"/C/XAMPP/htdocs/blog/app/User.php",
+		"/C/XAMPP/htdocs/blog/resources/views/articles/create.blade.php",
+		"/C/XAMPP/htdocs/blog/resources/views/articles/article.blade.php",
+		"/C/XAMPP/htdocs/blog/resources/views/user.blade.php",
+		"/C/XAMPP/htdocs/blog/app/Http/Controllers/UserController.php",
+		"/C/XAMPP/htdocs/blog/resources/views/articles/edit.blade.php",
+		"/C/XAMPP/htdocs/blog/app/Http/Controllers/ArticlesController.php",
+		"/C/XAMPP/htdocs/blog/app/Http/routes.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook/app/routes.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/app/Providers/RouteServiceProvider.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook/vendor/predis/predis/lib/Predis/ResponseObjectInterface.php",
+		"/C/XAMPP/htdocs/primjeri/README.txt",
+		"/C/XAMPP/htdocs/blog/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/XAMPP/htdocs/blog/app/Article.php",
+		"/C/XAMPP/htdocs/blog/resources/views/user",
+		"/C/XAMPP/htdocs/blog/database/migrations/2015_04_09_163431_create_articles_table.php",
+		"/C/XAMPP/htdocs/blog/config/app.php",
+		"/C/XAMPP/htdocs/blog/resources/views/auth/register.blade.php",
+		"/C/XAMPP/htdocs/blog/resources/views/auth/login.blade.php",
+		"/C/XAMPP/htdocs/blog/public/js/script.js",
+		"/C/XAMPP/htdocs/blog/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/XAMPP/htdocs/blog/app/Http/Kernel.php",
+		"/C/XAMPP/htdocs/blog/vendor/laravel/framework/src/Illuminate/Database/Schema/Grammars/Grammar.php",
+		"/C/XAMPP/htdocs/blog/vendor/laravel/framework/src/Illuminate/Database/Connection.php",
+		"/C/XAMPP/htdocs/blog/app/Http/Middleware/Authenticate.php",
+		"/C/XAMPP/htdocs/blog/resources/views/articles.blade.php",
+		"/C/XAMPP/htdocs/blog/app/Http/Controllers/ArticleController.php",
+		"/C/XAMPP/htdocs/blog/.env",
+		"/C/XAMPP/htdocs/blog/blog.md",
+		"/C/Windows/System32/Drivers/etc/hosts",
+		"/C/XAMPP/htdocs/blog/readme.md",
+		"/C/XAMPP/htdocs/blog/.gitattributes",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/app/Http/Controllers/WelcomeController.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/resources/views/main.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/resources/views/home.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/resources/views/home2.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/resources/views/verin_html.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/config/database.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/app/Http/Controllers/HomeController.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/app/Http/routes.php",
+		"/C/Users/Ivan/Desktop/u travi.html",
+		"/C/Users/Ivan/Desktop/style.css",
+		"/C/Users/Ivan/Desktop/novi.html",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/vendor/zurb/foundation/scss/foundation.css",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/.env",
+		"/C/XAMPP/htdocs/laravel_vjezba/webshop/composer.json",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook/readme.md",
+		"/C/XAMPP/htdocs/laravel_vjezba/Movie-master/app/config/database.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook/app/config/database.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook/.gitignore",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook/app/config/mail.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/.gitignore",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/database/migrations/2015_02_16_170308_create_profiles.php",
+		"/C/XAMPP/apache/conf/httpd.conf",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/controllers/UserController.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/controllers/ProfileController.php",
+		"/C/Users/Ivan/Desktop/veronikaaaa.html",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/register.blade.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/database.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/models/User.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/User.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/UserController.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/controllers/ProfileController.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/views/home.blade.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/views/profile/friendsProfile.blade.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/views/fragments/status.blade.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/controllers/UserController.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/ProfileController.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/friendsProfile.blade.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/status.blade.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/views/ajaxStatus.blade.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/home.blade.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/myProfile.blade.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/views/profile/myProfile.blade.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/views/ajax.blade.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/readme.md",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/config/mail.php",
+		"/C/Users/Ivan/Documents/GitHub/lovebook/app/config/database.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/.gitattributes",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/.gitignore",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/main/basicBS.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/main/layout.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/.git/index",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/profile/friendsProfile.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/profile/myProfile.blade.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/basicBS.blade.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/layout.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/home.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/public/css/style.css",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/mail.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/app.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/style.css",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_deploy/app/config/database.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/script.js",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_deploy/app/config/mail.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/guest/login.blade.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/index 2.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/server.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/paths 2.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/paths.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/database 2.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/paths 3.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/index 3.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/mail 2.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/storage/views/830496a45a6b0b6d642014d32e69ce79",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/storage/views/04ccbe68c2423963c359a9868c583818",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/app 2.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_deploy/vendor/composer/autoload_classmap.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/autoload_classmap.php",
+		"/C/Users/Ivan/AppData/Local/Temp/fz3temp-1/default.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/status2.blade.php",
+		"/E/Ivan/Projekti/JavaScript/jQuery/chapter_06/02_hijax_links/index.html",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/ajax.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/public/js/script.js",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/status3.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/fragments/status.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/guest/login2.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/requestsPage.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/fragments/comment.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/routes.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/ajaxStatus.blade.php",
+		"/C/XAMPP/htdocs/laravel_vjezba/lovebook_proto/app/views/profile/profile.blade.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"C:\\XAMPP\\htdocs\\blog"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hash",
+			"Schema",
+			"starter",
+			"-",
+			"statusconta",
+			"status",
+			"ajax",
+			"control-form",
+			"col-sm-2",
+			"posts",
+			"row",
+			"_likeAnc",
+			"margin-bottom",
+			"width",
+			"34",
+			"friend",
+			"status",
+			"layout",
+			"settime",
+			"now()",
+			".small",
+			"begin",
+			"servername",
+			"input",
+			"rel=\"gal\"",
+			"border",
+			"padding",
+			"padding: 1px",
+			"script"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"class=\"colorClass\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4837,
+								4837
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "resources/views/articles/articles.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 233,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								39,
+								39
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 116.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "blog.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"route",
+				"lovebook\\app\\routes.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 1
+	}
+}
