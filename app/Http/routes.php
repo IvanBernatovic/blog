@@ -12,14 +12,14 @@
 */
 
 Route::group(['middleware' => 'auth'], function(){
-    Route::get('/logout', [
-		'as' => 'logout',
-		'uses' => 'UserController@logout'
-    ]);
+  Route::get('/logout', [
+	'as' => 'logout',
+	'uses' => 'UserController@logout'
+  ]);
 
-    Route::get('/articles/create', [
-    	'as' => 'getCreate',
-    	'uses' => 'ArticlesController@getCreate'
+  Route::get('/articles/create', [
+  	'as' => 'getCreate',
+  	'uses' => 'ArticlesController@getCreate'
 	]);
 
 	Route::post('/articles/create', [
@@ -48,7 +48,7 @@ Route::group(['middleware' => 'guest'], function(){
 		'as' => 'postLogin',
 		'uses' => 'UserController@postLogin'
     ]);
-    
+
     Route::get('/register', [
         'as' => 'getRegister',
         'uses' => 'UserController@getRegister'
@@ -65,12 +65,12 @@ Route::get('/', function(){
 });
 
 Route::get('/articles', [
-	'as' => 'articles', 
+	'as' => 'articles',
 	'uses' => 'ArticlesController@showAll'
 ]);
 
 Route::get('/articles/{id}', [
-	'as' => 'showArticle', 
+	'as' => 'showArticle',
 	'uses' => 'ArticlesController@show'
 ]);
 
